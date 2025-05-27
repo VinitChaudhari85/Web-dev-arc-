@@ -1,0 +1,8 @@
+table,td {
+    border: 2px solid black;
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+img{
+    width: 70px;
+}
