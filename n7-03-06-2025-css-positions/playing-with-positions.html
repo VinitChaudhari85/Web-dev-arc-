@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with positions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            border: 2px solid black;
+            position: absolute;
+            top: 10vh;
+            left: 10vw;
+            width: 80vw;
+            height: 140vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 15%;
+            width: 60%;
+        }
+
+        .eng-box {
+            background-color: aliceblue;
+            margin: 2px;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .jp-box {
+            background-color: beige;
+            margin: 2px;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: relative;
+            top: 30px;
+            z-index: 5;
+
+        }
+
+        .span-box {
+            background-color: bisque;
+            margin: 2px;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+
+        }
+
+        .hin-box {
+            background-color: orange;
+            margin: 2px;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: absolute;
+            top: 80%;
+            left: 10%;
+
+        }
+
+        .cn-box {
+            background-color: orangered;
+            margin: 2px;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            position: fixed;
+            bottom: 1vh;
+            left: 33vw;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box eng-box">Yo, this is box1</div>
+        <div class="box jp-box">やあ、これはボックス2です (Yā, kore wa bokkusu ni desu)</div>
+        <div class="box span-box">¡Hola! Esto es la caja tres</div>
+        <div class="box hin-box">अरे सुनो, यह बॉक्स 4 है (Are suno, yeh box chaar hai)</div>
+        <div class="box cn-box">嘿！这是第5个盒子 (Hēi! Zhè shì dì wǔ gè hézi)</div>
+    </div>
+</body>
+
+</html>

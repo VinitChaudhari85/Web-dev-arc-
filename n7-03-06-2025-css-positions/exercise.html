@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making thee exercise page...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .page {
+            display: flex;
+            margin: auto;
+            height: 100vh;
+            width: 40vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: azure;
+        }
+
+        .page-container {
+            height: 92%;
+            width: 78%;
+            border: 2px solid black;
+            border-radius: 40px;
+            box-shadow: 4px 4px 18px 12px rgb(213, 213, 213) ;
+            background-color: white;
+            overflow: auto;
+        }
+
+        #image-container {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            height: 40%;
+            width: 96%;
+            border-radius: inherit;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+        }
+
+        .category {
+            display: flex;
+            padding: 3%;
+        }
+
+        .cat {
+            border: 2px solid grey;
+            padding: 2%;
+            margin: 2%;
+            border-radius: 50px;
+            font-size: 1rem;
+            color: grey;
+        }
+        .content{
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: grey;
+            margin: 3%;
+            padding: 2%;
+        }
+        .content h2{
+            color: rgb(68, 68, 68);
+        }
+        p{
+            margin-top: 4%;
+        }
+        .btn{
+            margin-top: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #btn {
+            width: 100px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            background-color: rgb(204, 245, 245);
+        }
+        #btn a{
+            text-decoration: none;
+            color: rgb(52, 52, 238);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-container">
+            <div id="image-container">
+                <img src="https://valo2asia.com/wp-content/uploads/2024/04/ECYkDIQWsAAs6ZC.jpg" alt="vct-arena-image">
+            </div>
+            <div class="category">
+                <div class="cat">
+                    <p>category1</p>
+                </div>
+                <div class="cat">
+                    <p>category2</p>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id eius veniam laborum adipisci, eos enim
+                    asperiores minima nulla laudantium architecto. Accusantium dolorem quo veniam optio!</p>
+            </div>
+            <div class="btn">
+                <div id="btn">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
