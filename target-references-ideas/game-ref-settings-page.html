@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Settings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    body {
+      background-color: #111;
+      color: #00ffe1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .settings-panel {
+      background: #222;
+      border: 3px solid #00ffe1;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 320px;
+      box-shadow: 0 0 12px #00ffe1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 10px;
+    }
+
+    .setting-group {
+      margin-bottom: 1.5rem;
+    }
+
+    input[type="range"] {
+      width: 100%;
+    }
+
+    select, input[type="range"], .toggle, button {
+      background: #111;
+      color: #00ffe1;
+      border: 2px solid #00ffe1;
+      padding: 0.4rem;
+      width: 100%;
+      font-size: 10px;
+    }
+
+    .toggle {
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .toggle:hover, button:hover, select:hover {
+      background-color: #00ffe1;
+      color: #111;
+    }
+
+    button {
+      margin-top: 1rem;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="settings-panel">
+    <h1>GAME SETTINGS</h1>
+
+    <div class="setting-group">
+      <label for="music-toggle">Music</label>
+      <div class="toggle" onclick="this.textContent = this.textContent === 'ON' ? 'OFF' : 'ON'">ON</div>
+    </div>
+
+    <div class="setting-group">
+      <label for="volume">Volume</label>
+      <input type="range" id="volume" min="0" max="100" value="40" />
+    </div>
+
+    <div class="setting-group">
+      <label for="graphics">Graphics Quality</label>
+      <select id="graphics">
+        <option>Low</option>
+        <option selected>Medium</option>
+        <option>High</option>
+      </select>
+    </div>
+
+    <button>Save Settings</button>
+  </div>
+</body>
+</html>

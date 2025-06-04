@@ -1,0 +1,154 @@
+:root {
+    --dark-theme: black;
+    --less-dark-theme: #23232374;
+    --light-theme: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-theme);
+    font-family: 'Exo 2';
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    background-color: var(--dark-theme);
+    color: var(--light-theme);
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    opacity: 0.7;
+}
+
+nav ul li {
+    padding: 10px;
+    display: inline;
+    list-style: none;
+    list-style-position: inside;
+    vertical-align: middle;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-shadow: 4px 3px 5px white;
+}
+
+nav ul li img {
+    margin-top: 4px;
+    width: 4.5%;
+}
+
+.cc {
+    display: inline-block;
+    border: 2px solid white;
+    background-color: var(--less-dark-theme);
+    box-shadow: 9px 7px 20px white;
+}
+
+.c1,
+.c2 {
+    margin-top: 15vh;
+    margin-left: 6.5vw;
+    width: 40vw;
+    height: 60vh;
+    border-radius: 30px;
+}
+
+.images {
+    margin-top: 0.7%;
+    margin-left: 0.7%;
+    width: 97%;
+    border-radius: inherit;
+}
+
+.images img {
+    border: 1px solid white;
+    margin: 5px;
+    justify-content: center;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.ps {
+    margin: 5px;
+    padding: 20px;
+}
+
+.c3 {
+    margin-left: 10vw;
+    margin-top: 10vh;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 30px;
+}
+
+h2 {
+    margin: 15px;
+}
+
+h1 {
+    margin-top: 5%;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--light-theme);
+}
+
+.cx {
+    color: var(--light-theme);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.c4 {
+    margin-left: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 90vw;
+    height: 40vh;
+    border-radius: 30px;
+}
+
+.c5 {
+    background-color: var(--light-theme);
+    display: block;
+    position: fixed;
+    border: 2px solid white;
+    box-shadow: 9px 7px 20px white;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 40px;
+    padding: 7px;
+    z-index: 5;
+    width: 65px;
+}
+
+.c5 img {
+    justify-content: center;
+    width: 90%;
+    border-radius: inherit;
+}
+
+.c5 :hover {
+    cursor: pointer;
+}
+
+a,
+img {
+    transition: all 0.3s ease;
+}
