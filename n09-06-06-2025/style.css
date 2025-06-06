@@ -1,0 +1,27 @@
+.container{
+    width: 70vw;
+    height: 79vh;   
+    background-color: skyblue;
+    border: 3px solid black;
+    /* apply display flex property 
+    to be able to use features of flexbox */
+    display: flex;
+    /* wraps the overflowing items */
+    flex-wrap: wrap;
+    gap:5%;
+    /* horizontally center */
+    justify-content:space-evenly;
+    /* vertically center */
+    align-items:center;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 5%;
+    width: 20%;
+    height: 20%;
+    font-weight: 600;
+    background-color: coral;
+    border: 3px solid black;
+}
