@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main-content {
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+
+.bg {
+    background-image: url("netflix-bg.jpg");
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    height: 10vh;
+    background-color: transparent;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 5vh;
+}
+
+.list-container ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+
+.list-container ul select {
+    border: 1px solid white;
+    width: 8vw;
+    padding: 0.7vh;
+    background-color: transparent;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.btn {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn1 {
+    height: 4vh;
+    width: 5vw;
+    font-size: 1.1rem;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    gap: 3vh;
+    position: relative;
+    top: 15vh;
+}
+
+.intro-text {
+    max-width: 31%;
+    text-align: center;
+    font-size: 7vh;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+
+}
+
+.second-text {
+    font-size: 1.5rem;
+}
+
+.third-text {
+    font-size: 1.2rem;
+}
+
+.start {
+    width: 60vw;
+    display: flex;
+    gap: 1.5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.start input {
+    width: 20vw;
+    background-color: transparent;
+    padding: 5%;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn2 {
+    width: 10vw;
+    padding: 10%;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.trending-shows {
+    width: 100%;
+    margin: auto;
+}
+
+.show-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shows {
+    position: relative;
+}
+
+.rank {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    font-size: 3rem;
+}
+
+.sub-reasons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.headings {
+    width: 90vw;
+    margin: auto;
+    padding: 2%;
+    font-size: 2rem;
+}
+
+.sub-container {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.reasons {
+    height: 30vh;
+    width: 20vw;
+    background-color: rgb(45, 45, 45);
+    border-radius: 5%;
+    padding: 1%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.desc {
+    font-size: 1.3rem;
+    padding: 3%;
+}
+
+.reason {
+    font-size: 1.8rem;
+}
+
+.question-container {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    background-color: rgb(45, 45, 45);
+    margin: 5px;
+}
+
+.question {
+    cursor: pointer;
+    padding: 1%;
+    font-size: 1.8rem;
+}
+
+.queries {
+    width: 80vw;
+    color: rgb(154, 154, 154);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+footer {
+    margin: 5vh 0%;
+}
+
+.extras {
+    padding: 5vh 0%;
+    margin: auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 17%;
+}
+
+.extra a {
+    color: rgb(154, 154, 154);
+}
+
+.closing {
+    margin: 5vh auto;
+    width: 80vw;
+    color: rgb(154, 154, 154);
+}
+
+.shows img {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.shows img {
+    animation: hoverOut 0.3s forwards ease-in-out;
+}
+
+.shows:hover img {
+    animation: hoverZoom 0.3s forwards ease-in-out;
+}
+
+@keyframes hoverZoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+    }
+}
+
+@keyframes hoverOut {
+    from {
+        transform: scale(1.08);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+.btn{
+    border: 1px solid white;
+    animation: elim-btn-anm 0.3s ease;
+}
+.btn:hover {
+    animation: forwards btn-anm 0.3s ease;
+}
+@keyframes btn-anm {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.03);
+        box-shadow: 0px 0px 7px 1px #fe7878;
+    }
+}
+@keyframes elim-btn-anm {
+    from{
+        transform: scale(1.03);
+        box-shadow: 0px 0px 7px 1px #fe7878;
+    }
+    to{
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+.reasons{
+    animation: elim-reasons-anm forwards 0.3s cubic-bezier(0, 0, 0, 0.09);
+}
+.reasons:hover{
+    animation: reasons-anm forwards 0.3s cubic-bezier(0, 0, 0, 0.09);
+}
+@keyframes reasons-anm {
+    from{
+        transform: scale(1);
+        box-shadow: none;
+        background-color: rgb(45, 45, 45);
+    }
+    to{
+        transform: scale(1.01);
+        box-shadow: 2px 2px 2px 2px #5c5c5c;
+        /* background-color: rgb(27 10 10); */
+    }
+}
+@keyframes elim-reasons-anm {
+    from{
+        transform: scale(1.01);
+        box-shadow: 2px 2px 2px 2px #5c5c5c;
+        /* background-color: rgb(27 10 10); */
+    }
+    to{
+        transform: scale(1);
+        box-shadow: none;
+        background-color: rgb(45, 45, 45);
+    }
+}
