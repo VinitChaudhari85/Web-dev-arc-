@@ -1,0 +1,23 @@
+.container {
+    width: 545px;
+    height: 300px;
+    margin: 15% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.box {
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 6px 5px 1px #89daff;
+}

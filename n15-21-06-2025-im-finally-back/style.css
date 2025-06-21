@@ -1,0 +1,71 @@
+.container {
+    width: 545px;
+    height: 300px;
+    margin: 15% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.box {
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 6px 5px 1px #89daff;
+}
+.container :first-child{
+    transform: rotateY(0deg);
+    transition: transform 1s ease;
+}
+.container :first-child:hover{
+    transform: rotateY(180deg);
+}
+.container :nth-child(2) {
+    transform: skewX(0deg);
+    transition: transform 0.3s ease;
+}
+
+.container :nth-child(2):hover {
+    transform: skewX(15deg);
+}
+.container :nth-child(3) {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.container :nth-child(3):hover {
+    transform: scale(1.1);
+}
+.container :nth-child(4) {
+    transform: none;
+    transition: transform 0.3s ease;
+}
+
+.container :nth-child(4):hover {
+    transform: translateX(15px);
+}
+
+.container :nth-child(5) {
+    transform: none;
+    transition: transform 0.3s ease;
+}
+
+.container :nth-child(5):hover {
+    transform: translateY(15px);
+}
+.container :nth-child(6) {
+    transform: none;
+    transition: transform 0.3s ease;
+}
+
+.container :nth-child(6):hover {
+    transform: translateX(-15px);
+}
