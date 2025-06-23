@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Box Theme Selector</title>
+  <style>
+    body {
+      background: #121212;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    select {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+      transition: background 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Select a Theme for Boxes</h1>
+  <select id="themeSelector">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+    <option value="alternating">Alternating</option>
+    <option value="random">Randomized</option>
+  </select>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <script>
+    const boxCollection = document.querySelectorAll('.box');
+    const themeSelector = document.getElementById('themeSelector');
+
+    function getRandomColor() {
+      const r = Math.floor(Math.random() * 256);
+      const g = Math.floor(Math.random() * 256);
+      const b = Math.floor(Math.random() * 256);
+      return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    function applyTheme(theme) {
+      boxCollection.forEach((box, index) => {
+        switch (theme) {
+          case 'light':
+            box.style.backgroundColor = '#ddd';
+            break;
+          case 'dark':
+            box.style.backgroundColor = '#333';
+            break;
+          case 'alternating':
+            box.style.backgroundColor = index % 2 === 0 ? '#666' : '#ccc';
+            break;
+          case 'random':
+            box.style.backgroundColor = getRandomColor();
+            break;
+        }
+      });
+    }
+
+    // Initial load
+    applyTheme(themeSelector.value);
+
+    // On theme change
+    themeSelector.addEventListener('change', (e) => {
+      applyTheme(e.target.value);
+    });
+  </script>
+
+</body>
+</html>

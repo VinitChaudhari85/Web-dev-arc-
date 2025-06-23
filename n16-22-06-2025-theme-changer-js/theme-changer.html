@@ -7,13 +7,18 @@
     <title>Testing out javascript on divs~</title>
 </head>
 <body>
+    <div class="title-msg"><p>What color are your boxes (@-@)</p></div>
+    <body>
     <div class="theme-sel-container">
-        <select name="theme" id="theme-selector">
-            <option value="light" selected>Light theme</option>
-            <option value="dark">Dark theme</option>
-            <option value="random">Random theme</option>
+        <select id="theme-selector">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="altering">Altering</option>
+            <option value="randomized">Randomized</option>
         </select>
+        <button onclick="applyTheme()">Apply Theme</button>
     </div>
+
     <div class="container">
         <div class="box">numba 1</div>
         <div class="box">numba 2</div>
@@ -22,6 +27,10 @@
         <div class="box">numba 5</div>
         <div class="box">numba 6</div>
     </div>
+
+    <script src="script2.js"></script>
+</body>
+
     <script src="script2.js"></script>
 </body>
 </html>
