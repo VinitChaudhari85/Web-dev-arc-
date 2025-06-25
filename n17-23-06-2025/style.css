@@ -7,6 +7,7 @@
 body{
     background-color: var(--dark-col);
     color: var(--light-text);
+    font-family: 'Poppins';
 }
 .button-container{
     width: 30%;
