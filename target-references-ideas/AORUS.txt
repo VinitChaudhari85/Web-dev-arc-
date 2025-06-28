@@ -1,0 +1,3 @@
+solid web design idea, inspired by aorus logo.
+here's the idea: 
+	You will implement a web for aorus and it will have a background of aorus logo or signature "eye design" which will have the animation of it opening the eye upon loading and all, you can also make it so that the eye ball focuses on your pointer 
