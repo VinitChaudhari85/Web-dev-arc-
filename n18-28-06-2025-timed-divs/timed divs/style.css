@@ -1,0 +1,166 @@
+.title-msg {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 22px;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 545px;
+    height: 300px;
+    margin: 15% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.box {
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 6px 5px 1px #89daff;
+}
+.tr-left {
+    animation: move-left forwards 0.3s ease;
+}
+
+.tr-right {
+    animation: move-right forwards 0.3s ease;
+}
+
+.tr-up {
+    animation: move-up forwards 0.3s ease;
+}
+
+.tr-down {
+    animation: move-down forwards 0.3s ease;
+}
+
+.revert-tr-left {
+    animation: move-left-rev forwards 0.3s ease;
+}
+
+.revert-tr-right {
+    animation: move-right-rev forwards 0.3s ease;
+}
+
+.revert-tr-up {
+    animation: move-up-rev forwards 0.3s ease;
+}
+
+.revert-tr-down {
+    animation: move-down-rev forwards 0.3s ease;
+}
+
+@keyframes move-left {
+    from {
+        transform: none;
+        transition: transform;
+    }
+
+    to {
+        transform: translate(-15px);
+        transition: transform;
+    }
+}
+
+@keyframes move-right {
+    from {
+        transform: none;
+        transition: transform;
+    }
+
+    to {
+        transform: translateX(15px);
+        transition: transform;
+    }
+}
+
+@keyframes move-up {
+    from {
+        transform: none;
+        transition: transform;
+    }
+
+    to {
+        transform: translateY(-15px);
+        transition: transform;
+    }
+}
+
+@keyframes move-down {
+    from {
+        transform: none;
+        transition: transform;
+    }
+
+    to {
+        transform: translateY(15px);
+        transition: transform;
+    }
+}
+
+@keyframes move-left-rev {
+    from {
+        transform: translate(-15px);
+        transition: transform;
+    }
+
+    to {
+        
+        transform: none;
+        transition: transform;
+    }
+}
+
+@keyframes move-right-rev {
+    from {
+        transform: translateX(15px);
+        transition: transform;
+    }
+
+    to {
+                transform: none;
+        transition: transform;
+        
+    }
+}
+
+@keyframes move-up-rev {
+    from {
+                transform: translateY(-15px);
+        transition: transform;
+    }
+
+    to {
+                transform: none;
+        transition: transform;
+
+    }
+}
+
+@keyframes move-down-rev {
+    from {
+        
+        transform: translateY(15px);
+        transition: transform;
+    }
+
+    to {
+        transform: none;
+        transition: transform;
+    }
+}

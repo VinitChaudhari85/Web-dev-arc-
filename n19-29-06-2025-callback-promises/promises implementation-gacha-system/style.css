@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #39ff14;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 500px;
+    width: 800px;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    box-shadow: 0 0 20px #00ffff;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 0.9rem;
+    border: 2px dashed #00ffff;
+    padding: 10px;
+    background-color: black;
+    color: #00ffff;
+    text-align: center;
+    width: 90%;
+}
+
+#wish {
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    font-size: 0.8rem;
+    background-color: black;
+    color: #39ff14;
+    border: 2px solid #39ff14;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#wish:hover {
+    background-color: #39ff14;
+    color: black;
+}
+
+.result-msg {
+    font-size: 0.7rem;
+    color: #00ffff;
+}
+
+.result {
+    height: 120px;
+    width: 600px;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
