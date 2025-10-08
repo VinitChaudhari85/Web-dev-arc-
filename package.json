@@ -1,0 +1,24 @@
+{
+  "name": "web-dev-arc-",
+  "version": "1.0.0",
+  "description": "My web development arc and its records :D",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinitChaudhari85/Web-dev-arc-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinitChaudhari85/Web-dev-arc-/issues"
+  },
+  "homepage": "https://github.com/VinitChaudhari85/Web-dev-arc-#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
